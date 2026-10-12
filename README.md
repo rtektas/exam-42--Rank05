@@ -1,69 +1,75 @@
-# Resul Tektas
+# 42 Exam Rank 05
 
-**Developer at 42 Brussels**  
-📍 Brussels, Belgium
+![42](https://img.shields.io/badge/42-Exam_Rank_05-000000?style=for-the-badge)
+![Result](https://img.shields.io/badge/Result-100%25-success?style=for-the-badge)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 
-I build applications, system tools, and web projects. I have completed the **42 Brussels core curriculum**. I enjoy understanding how things work, from memory and processes to interfaces and databases. I particularly enjoy making games, and I'm passionate about gaming.
+My personal preparation code for **42 Exam Rank 05**.
 
----
+## 🏆 My exam result — 100%
 
-## 42 Projects
+![42 Exam Rank 05 — Success, 100/100](./exam-result.png)
 
-| Project | What I worked on |
+I passed **parts 1 and 2** and scored **100%**. The exercises I received were:
+
+| Part | Exercise | Language | Result |
+| --- | --- | --- | --- |
+| 1 | **vect2** | C++ | ✅ Passed |
+| 2 | **Life** | C | ✅ Passed |
+
+These are the solutions I used to prepare for the exam, and they worked for me: I successfully completed both exercises during my exam.
+
+## 📂 Repository contents
+
+| Folder | Contents | Status |
+| --- | --- | --- |
+| [`vect2/`](./vect2/) | A two-dimensional integer vector class with operator overloading. | My part 1 exam exercise — passed |
+| [`life/`](./life/) | Conway's Game of Life, with an initial board drawn through standard input. | My part 2 exam exercise — passed |
+| [`bigint/`](./bigint/) | C++ practice with large integers. | Additional preparation |
+| [`bsq/`](./bsq/) | Biggest Square practice in C. | Additional preparation |
+| [`polyset/`](./polyset/) | C++ practice with bags, searchable containers and sets. | Work in progress — some files are empty |
+
+The **100% result refers to my exam with vect2 and Life**, not to validation of every exercise in this repository.
+
+## ⚙️ Compile and run
+
+Run these commands from the repository root.
+
+### vect2
+
+Compile the implementation into an object file:
+
+```bash
+c++ -Wall -Wextra -Werror -std=c++98 -c vect2/vect2.cpp -o vect2.o
+```
+
+To try the class, write your own `main.cpp` including `vect2.hpp`, then compile and run:
+
+```bash
+c++ -Wall -Wextra -Werror -std=c++98 -I vect2 main.cpp vect2/vect2.cpp -o vect2_test
+./vect2_test
+```
+
+### Life
+
+```bash
+cc -Wall -Wextra -Werror -std=c99 life/life.c -o life_test
+printf 'dsxdd' | ./life_test 5 5 1
+```
+
+Arguments: `width height iterations`.
+
+| Key | Action |
 | --- | --- |
-| **ft_transcendence** | A full-stack web application, software architecture, and teamwork. |
-| **Minishell** | Parsing, pipes, redirections, environment variables, and signals. |
-| **Inception** | Deploying services with Docker and Docker Compose. |
-| **cub3D** | 3D rendering with raycasting and handling user interactions. |
-| **so_long** | A small 2D game with map handling and keyboard input. |
-| **NetPractice** | IP addressing, subnetting, and routing. |
-| **C++ Modules** | Object-oriented programming, inheritance, polymorphism, templates, and the STL. |
+| `w` | Move up |
+| `a` | Move left |
+| `s` | Move down |
+| `d` | Move right |
+| `x` | Toggle the pen to draw living cells |
 
-I have also worked on other projects from the curriculum, including **Libft**, **ft_printf**, **get_next_line**, **push_swap**, **Philosophers**, and **Webserv**.
+The program reads the drawing commands, simulates the requested number of generations, and prints the final board using `O` for living cells and spaces for dead cells.
 
-🔗 [Explore my Cursus-42 repository](https://github.com/rtektas/Cursus-42)
+## 👤 Author
 
----
-
-## Other Projects
-
-- [Amazone Game — ULB](https://github.com/rtektas/Amazone-game-ULB)
-- [Vasarely — ULB](https://github.com/rtektas/Vasarely-ULB-)
-
----
-
-## Technical Skills
-
-### Languages
-
-[![C, C++, Python, Java, JavaScript, C#](https://skillicons.dev/icons?i=c,cpp,py,java,js,cs&perline=6)](https://skillicons.dev)
-
-**C · C++ · Python · Java · JavaScript · C# · Assembly**
-
-### Web
-
-[![HTML, CSS, Bootstrap, React, Node.js](https://skillicons.dev/icons?i=html,css,bootstrap,react,nodejs&perline=5)](https://skillicons.dev)
-
-**HTML · CSS · Bootstrap · React · Node.js**
-
-### Databases
-
-[![PostgreSQL, MySQL](https://skillicons.dev/icons?i=postgres,mysql&perline=2)](https://skillicons.dev)
-
-**PostgreSQL · MySQL**
-
-### Tools and environment
-
-[![Git, Linux, Bash, Docker](https://skillicons.dev/icons?i=git,linux,bash,docker&perline=4)](https://skillicons.dev)
-
-**Git · Linux · Bash · Docker**
-
----
-
-## Interests
-
-Software development · Game development · Gaming · Systems programming · Web applications · Software architecture and databases · Problem-solving
-
-**Spoken languages:** French · Turkish · English
-
-[View all my repositories](https://github.com/rtektas?tab=repositories)
+**Resul Tektas** · 42 Brussels · [@rtektas](https://github.com/rtektas)
